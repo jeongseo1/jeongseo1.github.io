@@ -1,9 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>jeongseo's homepage</title>
-  </head>
-  <body>
-    <h1>hi</h1>
-  </body>
+    <meta name="veiwport" content="user-scalable=no, initial-scale=1,maximum-scale=1">
+    <style> 
+        body {width: 960px;margin: 0 auto;overflow: hidden;}
+        #navigation{float:left;width:20%; background-color: skyblue;left:0;top:0;bottom:0;position:fixed;}
+        section{float:right;width:80%;right:0;top:0;bottom:0;position:fixed;}
+        nav>div{top:35%;left:15%;position:absolute;}
+        img{left:15%;position: relative;}
+        @media screen and (max-width:767px){
+            nav>div{left:40%;position:relative;}
+            img{left:2.5%;position:relative;}
+            body{width:auto}
+            #navigation{width:auto;float:none;background-color: skyblue;position:relative;}
+            section{width:auto;float:none;position:relative;}
+        }
+    </style>      
+    <style>
+        h1{font-size: 30px;font-weight: 900;font-family: 'Oswald', sans-serif;}
+        p{font-size: 20px;font-family:'Oswald', sans-serif;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#section2').hide()
+            $('#section3').hide()
+            $('#section4').hide()
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#about').click(function(){
+                $('section').hide()
+                $('#section1').show()                
+            })
+            $('#intro').click(function(){
+                $('section').hide()
+                $('#section2').show()
+            })
+            $('#like').click(function(){
+                $('section').hide()
+                $('#section3').show()
+            })
+            $('#hobby').click(function(){
+                $('section').hide()
+                $('#section4').show()
+            })
+        })
+    </script>  
+</head>
+
+<body>
+    <nav id="navigation">
+        <div>
+        <img src="../../../../에몽가.jpg" width="100px" height="100px">
+        <ul>
+            <li id="about">about</a></li>
+            <li id="intro">introduce</a></li>
+            <li id="like">like</a></li>
+            <li id="hobby">hobby</a></li>
+        </ul>
+        </div>
+        <p></p>
+    </nav>
+    <section id="section1">
+        <div class="page">
+            <div>
+                <h1>안녕하세요. 23살 박정서라고 합니다.</h1>
+                <h2>처음으로 웹페이지를 제작해 보았습니다.</h2>
+                <p><small>다음엔 더 잘 만들어야지.....</small></p>
+
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="page">
+            <div>
+                <h1>저에 대해 소개해 보자면...사람들 잘 믿는 것 같고요.근데 친구는 별로 없고 집에 있는 거 좋아합니다......그리고</h1>
+                <h1>어렸을 때부터 자기소개를 싫어했습니다.</h1>
+                <h2>무슨 말을 해야 할 지...잘 모르겠어서</h2>
+                <h3>그래도 취미랑 좋아하는 것 정도는....</h3>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="page">
+            <div>
+                <h1>좋아하는 것부터</h1>
+                <p>음식:피자랑 햄버거랑 김치찌개등 김치 들어간 요리</p>
+                <p>가수:빅뱅이랑 아이유랑 이문세등등</p>
+                <p>포켓몬:에몽가</p>
+                <h1>싫어하는 것</h1>
+                <p>국밥,벌레,아픈거,여름</p>
+            </div>
+        </div>
+    </section>
+    <section id="section4">
+        <div class="page">
+            <div>
+                <h1>취미</h1>
+                <p>취미로는 게임,누워서 유튜브 보기,피아노(엄청못침,초보임,잘해질예정),요리(잘못함,맛은그럭저럭,며칠전에 칼만지다가 손베임),운동(홈트가끔),독서(완전가끔) 등등이 있습니다.</p>
+                <img src="../../../../감사합니다.gif" width="100px" height="100px">
+                <h1>감사합니다.</h1>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
